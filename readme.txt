@@ -1,8 +1,6 @@
-Thank you for using our template!
-
-For more awesome templates please visit https://colorlib.com/wp/templates/
-
-Copyright information for the template can't be altered/removed unless you purchase a license.
-More information about the license is available here: https://colorlib.com/wp/licence/
-
-Removing copyright information without the license will result in suspension of your hosting and/or domain name(s).
+Here I am submitting web application which I have developed using frontend tools.
+1.I have listed products dynamically.
+2.Search functionality is working
+3.Filter functionality is working.
+4.I have added pagination.
+5.In product detail page once you will click on color as per color images will change accordingly.
