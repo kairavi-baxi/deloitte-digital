@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+              } else {
+              dropdownContent.style.display = "block";
+              }
+              });
+            }
+            </script>
+    </head>
+    <body>
+
+   
+        <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">Shop</a>
+        <a href="#contact">Magazine</a>
+        <form name="header-menu">
+        <span class="search-box">
+    <input type="text" placeholder="search" class="form-control"></span>
+</form>
+</div>
+<div>
+<form name="filter-form">
+    <div class="sidenav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <button class="dropdown-btn">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <a href="#contact">Search</a>
+      </div>
+</form>
+      </div>
+    </body>
+</html>
