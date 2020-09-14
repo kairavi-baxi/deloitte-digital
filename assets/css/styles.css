@@ -1,6 +1,6 @@
 .product-img{
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 200px;
+  max-height: 200px;
 }
 .left-filter{
   float:left;
@@ -31,4 +31,15 @@
 }
 .filter-li{
   color:#635c5c;
+}
+.buynow-btn{
+  background-color: #000;
+  color: white;
+}
+.logo-cls{
+  height:50px;
+  width:50px;
+}
+.pt-10{
+  padding-top:10px;
 }

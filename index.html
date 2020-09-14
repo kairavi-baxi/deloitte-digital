@@ -36,7 +36,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
+                    <img  src="assets/img/logo/loder.png" alt="">
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
                         <div class="header-left d-flex align-items-center">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img class="logo-cls" src="assets/img/logo/logo.png" alt=""></a>
                             </div>
                             <!-- Main-menu -->
                             <div class="main-menu  d-none d-lg-block">
@@ -130,8 +130,8 @@
     <div class="container">
         <div class="row left-filter">
             <div>
-                <h1>Filter By</h1>
-                <div class="dropdown">
+                <h4>Filter By</h4>
+                <div class="pt-10 dropdown">
                     <button class="filter-dd dropdown-toggle" style="color: black;
                     border: none;
                     background-color: white;" type="button" data-toggle="dropdown">Collection
@@ -167,7 +167,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" ng-repeat="data in products | filter:searchText" ng-show="!nodata">
+            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-8" ng-repeat="data in products | filter:searchText" ng-show="!nodata">
                 <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                     <div class="popular-img">
                         <img ng-src="{{data.images}}" alt="" class="product-img">

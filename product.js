@@ -16,7 +16,43 @@ app.controller("myAppController", function($scope){
         },
         {
             product_name: 'Momo',
+            images:'assets/img/products/shelf.jpg',
+            price:'$890',
+            type:'Shelves'
+        },
+        {
+            product_name: 'Kappu',
+            images:'assets/img/products/book-shelf.jpg',
+            price:'$890',
+            type:'Shelves'
+        },
+        {
+            product_name: 'Nile',
             images:'assets/img/products/book.jpg',
+            price:'$890',
+            type:'Shelves'
+        },
+        {
+            product_name: 'Mole',
+            images:'assets/img/products/pink-sofa.jpg',
+            price:'$890',
+            type:'Shelves'
+        },
+        {
+            product_name: 'Trait',
+            images:'assets/img/products/black-sofa.jpg',
+            price:'$890',
+            type:'Shelves'
+        },
+        {
+            product_name: 'Chair',
+            images:'assets/img/products/garden-chair.jpg',
+            price:'$890',
+            type:'Shelves'
+        },
+        {
+            product_name: 'Garden Sofa',
+            images:'assets/img/products/garden-sofa.jpg',
             price:'$890',
             type:'Shelves'
         }

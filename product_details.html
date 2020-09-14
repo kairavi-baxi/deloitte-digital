@@ -24,16 +24,20 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.11.0/underscore-min.js"></script>
+    <script src="product.js"></script>
     
 </head>
-<body class="full-wrapper">
+<body class="full-wrapper"  ng-app="myApp" ng-controller="myAppController">
     <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loder.png" alt="">
+                    <img  src="assets/img/logo/loder.png" alt="">
                 </div>
             </div>
         </div>
@@ -48,7 +52,7 @@
                         <div class="header-left d-flex align-items-center">
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img class="logo-cls" src="assets/img/logo/logo.png" alt=""></a>
                             </div>
                             <!-- Main-menu -->
                             <div class="main-menu  d-none d-lg-block">
@@ -115,7 +119,8 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="map">
-                            <img src="assets/img/products/coombes.jpg" alt="">
+                            <img ng-show="showImg" src="assets/img/products/pink-sofa.jpg" alt="">
+                            <img ng-show="!showImg" src="assets/img/products/black-sofa.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -124,14 +129,17 @@
                             <h2>Coombes</h2>
                             <p>This is test description.Here we can add all the description we want.</p>
                         </div>
-                        <div>
+                        <div ng-init="showImg=true">
                             <span>Color</span>
-
+                            <ul>
+                                <li><img src="assets/img/products/multi-dot.png" ng-click="showImg=true;" height="10" width="10"></li>
+                                <li><img src="assets/img/products/black-dot.png" ng-click="showImg=false;" height="10" width="10"></li>
+                            </ul>
                         </div>
                         <div>
                             <span>Price Per Unit</span><br>
                             <span>$ 2,600</span>
-                            <button class="btn btn-default">Buy Now</button>
+                            <button class="buynow-btn">Buy Now</button>
                             <i class="ti-shopping-cart"></i>
                         </div>
                     </div>
