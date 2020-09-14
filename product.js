@@ -1,5 +1,6 @@
 var app = angular.module('myApp', []);
 app.controller("myAppController", function($scope){
+//product list
     $scope.products = [
         {
             product_name: 'Coombes',
@@ -21,6 +22,8 @@ app.controller("myAppController", function($scope){
         }
     ]
 
+    //Search function
+
     $scope.searchFn = function(){
             var data = $scope.products;
            var a = _.findWhere(data, {product_name:$scope.searchText});
@@ -33,6 +36,7 @@ app.controller("myAppController", function($scope){
             }
     }
 
+    //reset function
     $scope.resetFn = function(){
         $scope.searchText = undefined;
         $scope.nodata = false;
