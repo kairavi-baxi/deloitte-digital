@@ -26,10 +26,10 @@ app.controller("myAppController", function($scope){
 
     $scope.searchFn = function(){
             var data = $scope.products;
-           var a = _.findWhere(data, {product_name:$scope.searchText});
-            if(a){
+           var prod = _.findWhere(data, {product_name:$scope.searchText});
+            if(prod){
                 $scope.products = [];
-                $scope.products.push(a);
+                $scope.products.push(prod);
                 $scope.nodata = false;
             }else{
                 $scope.nodata = true;
@@ -40,5 +40,18 @@ app.controller("myAppController", function($scope){
     $scope.resetFn = function(){
         $scope.searchText = undefined;
         $scope.nodata = false;
+    }
+
+    //Filter function
+    $scope.filterFn = function(data){
+        var filter_data = $scope.products;
+        var prod = _.findWhere(filter_data, {product_name:data});
+         if(prod){
+             $scope.products = [];
+             $scope.products.push(prod);
+             $scope.nodata = false;
+         }else{
+             $scope.nodata = true;
+         }
     }
 });
